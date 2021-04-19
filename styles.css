@@ -17,7 +17,7 @@ footer {
     text-align: center;
 }
 
-h1 {
+header h1 {
     font-size: 3em;
 }
 
@@ -29,7 +29,7 @@ h3{
     font-size: 23px;
 }
 
-details>summary{
+details > summary{
     font-size: 0.75cm;
 }
 
@@ -43,7 +43,7 @@ details>summary{
 /* Mobile */
 @media only screen and (max-width: 1024px) {
 
-    image, img {
+    video, img {
         width: auto ;
         max-width: 100% ;
         height: auto ;

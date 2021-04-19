@@ -11,17 +11,57 @@
             font-weight: bold;
             color:#663366;
         }
+        a:active{
+            font-weight: bold;
+            color:mediumorchid;
+        }
 
         img[src="media/ryan-ev-aidan.JPG"]{
             margin: 2% 0% 0% 0%;
         }
 
-        #favChars{
+        #outermostContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #Wednesday{
+            display: grid;
+            grid-template-areas:
+            'top top top top'
+            'left left right right';
+            padding: 10px;
+        }
+
+        .topGrid{
+            grid-area: top;
+        }
+
+        .leftGrid{
+            grid-area: left;
+        }
+
+        #favChars.rightGrid{
+            grid-area: right;
             background-color: antiquewhite;
             border-style: groove;
             border-color: saddlebrown;
             border-width: 5px;
             border-radius: 15px;
+        }
+
+        video ~ #vidCaption{
+            text-decoration: underline;
+            text-align: center;
+        }
+        img + #imgCaption{
+            text-decoration: underline;
+        }
+        #famPhoto{
+            height: 384px;
+            width: 288px;
+            position: static;
         }
     </style>
     <link href="media/trollface.png" rel="icon">
@@ -42,28 +82,28 @@
         </nav>
     </header>
     <main>
-        <section style = "display: flex; flex-direction: column; align-items: center;">
+        <section id="outermostContainer">
             <div>
                 <h2>
                     Entries:
                 </h2>
+                <h3>
+                    Wednesday
+                </h3>
                 <section id="Wednesday">
-                    <h3>
-                        Wednesday
-                    </h3>
-                    <p>
+                    <p class="topGrid">
                         On Wednesday, I woke up and completed my 142L lab. 
                         For lunch, I warmed up a batch of dinosaur chicken nuggets. 
                         Around 3 pm a friend from high school and from UCSD came to my house to visit. We hung out and talked about our quarter and our careers. 
                         We went to grab 30 wings from Wingstop for dinner. We closed out the night with some frozen yogurt and some <i>Super Smash Bros Ultimate</i>.
                     </p>
                     <br>
-                    <audio style="margin-top: 1%;" controls>
-                        <source src="media/mario-sound.mp3" type="audio/mpeg">
+                    <p class="leftGrid"> 
+                        <audio style="margin-top: 1%; display: inline;" controls>
+                        <source src="media/mario-sound.mp3" type="audio/mpeg">  
                         Your browser does not support the audio tag.
-                    </audio>
-                    <p>An audio clip of my favorite character, <b style="color: hsl(0, 100%, 45%);">Mario</b>, in <i>Super Smash Bros Ultimate</i> on the Nintendo Switch.</p>
-                    <section id="favChars">
+                        </audio> An audio clip of my favorite character, <b style="color: hsl(0, 100%, 45%);">Mario</b>, in <i>Super Smash Bros Ultimate</i> on the Nintendo Switch.</p>
+                    <section id="favChars" class="rightGrid">
                         <p>My favorite characters in <i>Super Smash Bros Ultimate</i> ranked are:</p>
                         <ol> 
                             <li>Mario</li>
@@ -89,7 +129,7 @@
                         <source src="media/Spikeball.MOV">
                         Your browser does not support the video tag.
                     </video>
-                    <p>A video of me and some of the family I traveled to Newport Beach with.</p>
+                    <p id="vidCaption">A video of me and some of the family I traveled to Newport Beach with.</p>
                     <details>
                         <summary>Newport Beach</summary>
                         <p>
@@ -107,8 +147,8 @@
                         After we got back, we play two gigantic games of volleyball on the beach. We washed up and then went to dinner at Bluewater Grill. 
                         We finished the night with some ice cream and card games.
                     </p>
-                    <img src="media/ryan-ev-aidan.JPG" alt="A picture of me with my brother and neighbor" width="288" height="384">
-                    <p>A photo from our boat tour of Newport Beach</p>
+                    <img id= "famPhoto" src="media/ryan-ev-aidan.JPG" alt="A picture of me with my brother and neighbor">
+                    <p id= "imgCaption">A photo from our boat tour of Newport Beach</p>
                 </section>
             </div>
             <section>
