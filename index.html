@@ -7,6 +7,9 @@
     <script></script>
     <style></style>
     <link href="media/trollface.png" rel="icon">
+    <link rel="stylesheet" href="styles.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -15,142 +18,141 @@
         </h1>
         <hr>
         <nav>
-            Entries:
-            <ul>
-                <li><a href="#Wednesday">Wednesday</a></li>
-                <li><a href="#Thursday">Thursday</a></li>
-                <li><a href="#Friday">Friday</a></li>
-            </ul>
+            <a href="#Wednesday" style="padding-right: 10%;">Wednesday</a>
+            <a href="#Thursday" style="padding-right: 10%;">Thursday</a>
+            <a href="#Friday" style="padding-right: 10%;">Friday</a>
         </nav>
     </header>
     <main>
-        <div>
-            <h2>
-                Entries:
-            </h2>
-            <section id="Wednesday">
-                <h3>
-                    Wednesday
-                </h3>
-                <p>
-                    On Wednesday, I woke up and completed my 142L lab. 
-                    For lunch, I warmed up a batch of dinosaur chicken nuggets. 
-                    Around 3 pm a friend from high school and from UCSD came to my house to visit. We hung out and talked about our quarter and our careers. 
-                    We went to grab 30 wings from Wingstop for dinner. We closed out the night with some frozen yogurt and some <i>Super Smash Bros Ultimate</i>.
-                </p>
-                <br>
-                <audio controls>
-                    <source src="media/mario-sound.mp3" type="audio/mpeg">
-                    Your browser does not support the audio tag.
-                </audio>
-                <p>An audio clip of my favorite character, <b>Mario</b>, in <i>Super Smash Bros Ultimate</i> on the Nintendo Switch.</p>
-                <p>My favorite characters in <i>Super Smash Bros Ultimate</i> ranked are:</p>
-                <ol> 
-                    <li>Mario</li>
-                    <li>Bowser</li>
-                    <li>Diddy Kong</li>
-                    <li>Falco</li>
-                </ol>
-            </section>
-            <section id="Thursday">
-                <h3>
-                    Thursday
-                </h3>
-                <p>
-                    On Thursday I woke up attend my 9:30 and 11 am class zoom lectures. 
-                    After these lectures my family and I packed the car and headed to Newport Beach. 
-                    When we arrived, we walked around found this nice small pizza place called Gina's Pizza. 
-                    We got back and played some <i>Mario Kart 8 Deluxe</i> on the Nintendo Switch. My mom made us some steak sandwiches for dinner. 
-                    Afterwards, we entertained ourselves with some Super Smash Bros and some Jackbox party games.
-                </p>
-                <br>
-                <video width="216" height="384" controls>
-                    <source src="media/Spikeball.MOV">
-                    Your browser does not support the video tag.
-                </video>
-                <p>A video of me and some of the family I traveled to Newport Beach with.</p>
-                <details>
-                    <summary>Newport Beach</summary>
+        <section style = "display: flex; flex-direction: column; align-items: center;">
+            <div>
+                <h2>
+                    Entries:
+                </h2>
+                <section id="Wednesday">
+                    <h3>
+                        Wednesday
+                    </h3>
                     <p>
-                        Newport Beach is a coastal city in Orange County, California known for its large habors.
+                        On Wednesday, I woke up and completed my 142L lab. 
+                        For lunch, I warmed up a batch of dinosaur chicken nuggets. 
+                        Around 3 pm a friend from high school and from UCSD came to my house to visit. We hung out and talked about our quarter and our careers. 
+                        We went to grab 30 wings from Wingstop for dinner. We closed out the night with some frozen yogurt and some <i>Super Smash Bros Ultimate</i>.
                     </p>
-                </details>
+                    <br>
+                    <audio controls>
+                        <source src="media/mario-sound.mp3" type="audio/mpeg">
+                        Your browser does not support the audio tag.
+                    </audio>
+                    <p>An audio clip of my favorite character, <b>Mario</b>, in <i>Super Smash Bros Ultimate</i> on the Nintendo Switch.</p>
+                    <p>My favorite characters in <i>Super Smash Bros Ultimate</i> ranked are:</p>
+                    <ol> 
+                        <li>Mario</li>
+                        <li>Bowser</li>
+                        <li>Diddy Kong</li>
+                        <li>Falco</li>
+                    </ol>
+                </section>
+                <section id="Thursday">
+                    <h3>
+                        Thursday
+                    </h3>
+                    <p>
+                        On Thursday I woke up attend my 9:30 and 11 am class zoom lectures. 
+                        After these lectures my family and I packed the car and headed to Newport Beach. 
+                        When we arrived, we walked around found this nice small pizza place called Gina's Pizza. 
+                        We got back and played some <i>Mario Kart 8 Deluxe</i> on the Nintendo Switch. My mom made us some steak sandwiches for dinner. 
+                        Afterwards, we entertained ourselves with some Super Smash Bros and some Jackbox party games.
+                    </p>
+                    <br>
+                    <video width="216" height="384" controls>
+                        <source src="media/Spikeball.MOV">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>A video of me and some of the family I traveled to Newport Beach with.</p>
+                    <details>
+                        <summary>Newport Beach</summary>
+                        <p>
+                            Newport Beach is a coastal city in Orange County, California known for its large habors.
+                        </p>
+                    </details>
+                </section>
+                <section id="Friday">
+                    <h3>
+                        Friday
+                    </h3>
+                    <p>
+                        On Friday, I woke up at 11 am, still at Newport Beach with family and friends. 
+                        At 11:30am, we left to go to rent a boat to eat lunch and tour the waters of Newport Beach for an hour and a half. 
+                        After we got back, we play two gigantic games of volleyball on the beach. We washed up and then went to dinner at Bluewater Grill. 
+                        We finished the night with some ice cream and card games.
+                    </p>
+                    <img src="media/ryan-ev-aidan.JPG" alt="A picture of me with my brother and neighbor" width="288" height="384">
+                    <p>A photo from our boat tour of Newport Beach</p>
+                </section>
+            </div>
+            <section>
+                <hr>
+                <h2>
+                    Create New Entry:
+                </h2>
+                <form>
+                    <fieldset>
+                        <legend>New Entry:</legend>
+                        <label>Title:</label>
+                        <input type= "text" id="title" name="title"> 
+                        <br>
+                        <label>Current Date:</label>
+                        <input type= "date" id="dateBox" name="dateBox">
+                        <br>
+                        <label>Day of the Week:</label>
+                        <select id="weekday">
+                            <optgroup label="weekday">
+                                <option value = "Sunday"> Sunday </option>
+                                <option value = "Monday"> Monday </option>
+                                <option value = "Tuesday"> Tuesday </option>
+                                <option value = "Wednesday"> Wednesday </option>
+                                <option value = "Thursday"> Thursday </option>
+                                <option value = "Friday"> Friday </option>
+                                <option value = "Saturday"> Saturday </option>
+                            </optgroup>
+                        </select>
+                        <br>
+                        <label for="location">Select your location:</label>
+                        <input list="locations" name="location" id="location">
+                        <datalist id="locations">
+                            <option value="West"></option>
+                            <option value="South"></option>
+                            <option value="Midwest"></option>
+                            <option value="Northeast"></option>
+                            <option value="Outside of the US"></option>
+                        </datalist>
+                        <br>
+                        <label> Contents:</label>
+                        <textarea id="contents" name="contents" rows="5" cols="50"></textarea>
+                        <br>
+                        <p>Content Covers:</p>
+                        <input type="checkbox" id="Morning" name="Morning" value="Morning">
+                        <label for="Morning"> Morning</label><br>
+                        <input type="checkbox" id="Midday" name="Midday" value="Midday">
+                        <label for="Midday"> Midday</label><br>
+                        <input type="checkbox" id="Afternoon" name="Afternoon" value="Afternoon">
+                        <label for="Afternoon"> Afternoon</label><br>
+                        <input type="checkbox" id="Evening" name="Evening" value="Evening">
+                        <label for="Evening"> Evening</label><br>
+                        <input type="checkbox" id="Night" name="Night" value="Night">
+                        <label for="Night"> Night</label><br>
+                        <br>
+                        <p>Type of Experience:</p>
+                        <input type="radio" id="abroad" name="experience" value="abroad">
+                        <label for="abroad">Abroad</label><br>
+                        <input type="radio" id="notAbroad" name="experience" value="notAbroad">
+                        <label for="notAbroad">Not Abroad</label><br>
+                        <br>
+                        <button type="button" >Create</button>
+                    </fieldset>
+            </form>
             </section>
-            <section id="Friday">
-                <h3>
-                    Friday
-                </h3>
-                <p>
-                    On Friday, I woke up at 11 am, still at Newport Beach with family and friends. 
-                    At 11:30am, we left to go to rent a boat to eat lunch and tour the waters of Newport Beach for an hour and a half. 
-                    After we got back, we play two gigantic games of volleyball on the beach. We washed up and then went to dinner at Bluewater Grill. 
-                    We finished the night with some ice cream and card games.
-                </p>
-                <img src="media/ryan-ev-aidan.JPG" alt="A picture of me with my brother and neighbor" width="288" height="384">
-                <p>A photo from our boat tour of Newport Beach</p>
-            </section>
-        </div>
-        <section>
-            <hr>
-            <h2>
-                Create New Entry:
-            </h2>
-            <form>
-                <fieldset>
-                    <legend>New Entry:</legend>
-                    <label>Title:</label>
-                    <input type= "text" id="title" name="title"> 
-                    <br>
-                    <label>Current Date:</label>
-                    <input type= "date" id="dateBox" name="dateBox">
-                    <br>
-                    <label>Day of the Week:</label>
-                    <select id="weekday">
-                        <optgroup label="weekday">
-                            <option value = "Sunday"> Sunday </option>
-                            <option value = "Monday"> Monday </option>
-                            <option value = "Tuesday"> Tuesday </option>
-                            <option value = "Wednesday"> Wednesday </option>
-                            <option value = "Thursday"> Thursday </option>
-                            <option value = "Friday"> Friday </option>
-                            <option value = "Saturday"> Saturday </option>
-                        </optgroup>
-                    </select>
-                    <br>
-                    <label for="location">Select your location:</label>
-                    <input list="locations" name="location" id="location">
-                    <datalist id="locations">
-                        <option value="West"></option>
-                        <option value="South"></option>
-                        <option value="Midwest"></option>
-                        <option value="Northeast"></option>
-                        <option value="Outside of the US"></option>
-                    </datalist>
-                    <br>
-                    <label> Contents:</label>
-                    <textarea id="contents" name="contents" rows="5" cols="50"></textarea>
-                    <br>
-                    <p>Content Covers:</p>
-                    <input type="checkbox" id="Morning" name="Morning" value="Morning">
-                    <label for="Morning"> Morning</label><br>
-                    <input type="checkbox" id="Midday" name="Midday" value="Midday">
-                    <label for="Midday"> Midday</label><br>
-                    <input type="checkbox" id="Afternoon" name="Afternoon" value="Afternoon">
-                    <label for="Afternoon"> Afternoon</label><br>
-                    <input type="checkbox" id="Evening" name="Evening" value="Evening">
-                    <label for="Evening"> Evening</label><br>
-                    <input type="checkbox" id="Night" name="Night" value="Night">
-                    <label for="Night"> Night</label><br>
-                    <br>
-                    <p>Type of Experience:</p>
-                    <input type="radio" id="abroad" name="experience" value="abroad">
-                    <label for="abroad">Abroad</label><br>
-                    <input type="radio" id="notAbroad" name="experience" value="notAbroad">
-                    <label for="notAbroad">Not Abroad</label><br>
-                    <br>
-                    <button type="button" >Create</button>
-                </fieldset>
-        </form>
         </section>
     </main>
     <footer>

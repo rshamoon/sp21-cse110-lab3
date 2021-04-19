@@ -1,0 +1,47 @@
+/*General Linked Style Sheet for Full Page*/
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0px; 
+    background-color: lightcyan;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(211,211,211);
+    text-align: center;
+}
+
+h1 {
+    font-size: 300%;
+}
+
+a:hover {
+    font-weight: bold;
+    color:#663366;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+.selected {
+    font-weight: bolder;
+}
+
+/* Mobile */
+@media only screen and (max-width: 1024px) {
+
+    image, img {
+        width: auto ;
+        max-width: 100% ;
+        height: auto ;
+    }
+}
