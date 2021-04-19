@@ -1,7 +1,8 @@
 /*General Linked Style Sheet for Full Page*/
 
-body{
+*{
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14pt;
 }
 
 header {
@@ -17,12 +18,19 @@ footer {
 }
 
 h1 {
-    font-size: 300%;
+    font-size: 3em;
 }
 
-a:hover {
-    font-weight: bold;
-    color:#663366;
+h2{
+    font-size: 4.75ex;
+}
+
+h3{
+    font-size: 23px;
+}
+
+details>summary{
+    font-size: 0.75cm;
 }
 
 .center {
@@ -31,10 +39,6 @@ a:hover {
     margin-right: auto;
     width: 50%;
   }
-
-.selected {
-    font-weight: bolder;
-}
 
 /* Mobile */
 @media only screen and (max-width: 1024px) {
